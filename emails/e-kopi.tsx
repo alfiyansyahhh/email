@@ -47,17 +47,11 @@ export const VercelInviteUserEmail = ({
                 <Column align='right'>
                   <Img
                     src={`${baseUrl}/static/e-kopi-logo.png`}
-                    width='40'
-                    height='37'
+                    width='103.91'
+                    height='36'
                     alt='Vercel'
                     className='my-0 p-2 mx-auto'
                   />
-                </Column>
-
-                <Column align='left'>
-                  <Text className='mt-2 ml-5 font-bold text-[#6D410B]'>
-                    Nama Brand
-                  </Text>
                 </Column>
               </Row>
             </Section>
@@ -73,10 +67,10 @@ export const VercelInviteUserEmail = ({
               <strong>
                 {template === 'regis' ? 'Selamat datang' : 'Hai'} {username},
               </strong>
-              <Text className='text-black font-semibold text-[14px] text-center px-20 '>
+              <Text className='text-black font-semibold text-[14px] text-center px-5 '>
                 {template === 'regis'
-                  ? `Selamat datang ${username}, Untuk memverifikasi ke akunmu, `
-                  : 'Kamu baru saja mengirim permintaan untuk reset password pada akunmu'}
+                  ? `Untuk memverifikasi akun, `
+                  : 'Anda baru saja mengirim permintaan untuk reset password pada akun. '}
                 silahkan klik tombol dibawah ini. Link dibawah hanya berlaku
                 selama 10 menit
               </Text>
@@ -86,10 +80,12 @@ export const VercelInviteUserEmail = ({
               <Row>
                 <Column align='center'>
                   <Button
-                    className='text-white my-10 bg-[#432114] cursor-pointer p-3 text-center rounded-lg w-[370px] '
+                    className='text-white my-10 bg-[#D94000] cursor-pointer p-3 text-center rounded-lg w-[370px] '
                     href={verifLink}
                   >
-                    {template === 'regis' ? 'Register' : 'reset password'}
+                    {template === 'regis'
+                      ? 'Verifikasi Akun'
+                      : 'reset password'}
                   </Button>
                 </Column>
               </Row>
@@ -102,7 +98,7 @@ export const VercelInviteUserEmail = ({
               </strong>
             </Text>
 
-            <Text className='bg-[#E0B79F33] text-center  p-5 rounded-md'>
+            <Text className='bg-[#FFE9DE80] text-[#D94000] text-center  p-5 rounded-md'>
               {verifLink}
             </Text>
 
